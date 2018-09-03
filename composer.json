@@ -1,6 +1,7 @@
 {
     "name": "tungatarov/php-brain-games",
     "bin": ["bin/brain-games"],
+    "type": "library",
     "license": "MIT",
     "description": "Console based brain games",
     "authors": [
@@ -9,5 +10,6 @@
             "email": "tungatarov.96@mail.ru"
         }
     ],
+    "minimum-stability": "stable",
     "require": {}
 }
