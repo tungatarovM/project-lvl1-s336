@@ -1,0 +1,12 @@
+{
+    "name": "tungatarov/php-brain-games",
+    "bin": ["bin/brain-games"],
+    "description": "Console based brain games",
+    "authors": [
+        {
+            "name": "tungatarovM",
+            "email": "tungatarov.96@mail.ru"
+        }
+    ],
+    "require": {}
+}
