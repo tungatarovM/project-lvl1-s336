@@ -1,7 +1,8 @@
 {
     "name": "tungatarov/php-brain-games",
     "bin": ["bin/brain-games"],
-    "type": "library",
+    "type": "project",
+    "keywords": ["brain-games", "php-cli-game", "hexlet"],
     "license": "MIT",
     "description": "Console based brain games",
     "authors": [
