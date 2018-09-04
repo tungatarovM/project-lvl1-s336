@@ -10,6 +10,11 @@
             "email": "tungatarov.96@mail.ru"
         }
     ],
+    "autoload": {
+        "files": [
+            "src/Cli.php"
+        ]
+    },
     "minimum-stability": "stable",
     "require": {
         "wp-cli/php-cli-tools": "^0.11.9"
