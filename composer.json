@@ -11,6 +11,9 @@
             "email": "tungatarov.96@mail.ru"
         }
     ],
+    "scripts": {
+        "phpcs": "phpcs"
+    },
     "autoload": {
         "files": [
             "src/Cli.php"
@@ -19,5 +22,8 @@
     "minimum-stability": "stable",
     "require": {
         "wp-cli/php-cli-tools": "^0.11.9"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.3"
     }
 }
