@@ -23,7 +23,7 @@ function gameRun()
         $answer = findGcd($numOne, $numTwo);
         return [
             'getQuestion' => $question,
-            'getCorrectAnswer' => $answer
+            'getCorrectAnswer' => "{$answer}"
         ];
     };
     return startEngine($gameData, GCD_GAME_RULE);
