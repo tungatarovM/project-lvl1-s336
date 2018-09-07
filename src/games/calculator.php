@@ -12,7 +12,6 @@ function getRandomOperation()
     return $operations[rand(0, count($operations)- 1)];
 }
 
-
 function getCorrectAnswer($firstNum, $secondNum, $operation)
 {
     if ($operation === '+') {
