@@ -2,7 +2,8 @@
     "name": "tungatarov/php-brain-games",
     "bin": [
         "bin/brain-games",
-        "bin/brain-even"
+        "bin/brain-even",
+        "bin/brain-calc"
     ],
     "type": "project",
     "keywords": ["brain-games", "php-cli-game", "hexlet"],
@@ -20,7 +21,8 @@
     "autoload": {
         "files": [
             "src/Cli.php",
-            "src/games/even.php"
+            "src/games/even.php",
+            "src/games/calculator.php"
         ]
     },
     "minimum-stability": "stable",
