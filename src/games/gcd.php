@@ -8,6 +8,12 @@ const GCD_GAME_RULE = 'Find the greatest common divisor of given numbers.';
 
 function findGcd($numOne, $numTwo)
 {
+    if ($numOne === 0) {
+        return $numTwo;
+    }
+    if ($numTwo === 0) {
+        return $numOne;
+    }
     $large = $numOne > $numTwo ? $numOne : $numTwo;
     $small = $numOne > $numTwo ? $numTwo : $numOne;
     $remainder = $large % $small;
