@@ -5,6 +5,9 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/24a27ce00678e4a87534/maintainability)](https://codeclimate.com/github/tungatarovM/project-lvl1-s336/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/24a27ce00678e4a87534/test_coverage)](https://codeclimate.com/github/tungatarovM/project-lvl1-s336/test_coverage)
 
+# Commands
+  make install - to install all the dependencies
+  make lint - to start the linter
 
 # Asciinema recs:
   1st checkpoint: https://asciinema.org/a/Tq8mKAUBmoAPJPLshiY4nTVqX
