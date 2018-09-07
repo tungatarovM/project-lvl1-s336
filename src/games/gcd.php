@@ -11,7 +11,7 @@ function findGcd($numOne, $numTwo)
     $large = $numOne > $numTwo ? $numOne : $numTwo;
     $small = $numOne > $numTwo ? $numTwo : $numOne;
     $remainder = $large % $small;
-    return $remaider === 0 ? $small : findGcd($small, $remainder);
+    return $remanider === 0 ? $small : findGcd($small, $remainder);
 }
 
 function gameRun()
