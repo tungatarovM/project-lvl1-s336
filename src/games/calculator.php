@@ -35,7 +35,7 @@ function gameRun()
         
         return [
             "getQuestion" => $question,
-            "getCorrectAnswer" => $answer
+            "getCorrectAnswer" => "{$answer}"
         ];
     };
     return startEngine($gameData, CALC_GAME_RULES);
