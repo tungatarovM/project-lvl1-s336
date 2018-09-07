@@ -20,7 +20,7 @@ function isEven($number)
 
 function gameRun()
 {
-    $gameData = function() {
+    $gameData = function () {
         $question = rand(0, 100);
         $answer = getCorrectAnswer($question);
         return [
