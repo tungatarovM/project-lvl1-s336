@@ -7,4 +7,6 @@
 
 
 # Asciinema recs:
-  First checkpoint: https://asciinema.org/a/Tq8mKAUBmoAPJPLshiY4nTVqX
+  1st checkpoint: https://asciinema.org/a/Tq8mKAUBmoAPJPLshiY4nTVqX
+  4th checkpoint: https://asciinema.org/a/ZEV1bFp2FNudSByYyBgt8NFs5
+  5th checkpoint: https://asciinema.org/a/LmezM93BKZx3ivlaKBBRdR5Cq
