@@ -8,7 +8,7 @@ use function \cli\prompt;
 const LIVE_POINTS = 3;
 
 
-function startEngine($gameData, $gameRules) 
+function startEngine($gameData, $gameRules)
 {
     line("Welcome to the Brain Games!");
     line("{$gameRules}");
@@ -30,9 +30,7 @@ function startEngine($gameData, $gameRules)
             line("'{$playersAnswer}' is wrong answer ;(. Correct answer was '{$correctAnswer}'");
             line("Let's try again {$playerName}");
             return;
-        }     
+        }
     }
     return line("Congratulations {$playerName}");
-
-
 }
