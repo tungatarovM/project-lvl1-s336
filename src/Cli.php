@@ -22,7 +22,7 @@ function startEngine($gameData, $gameRules)
     line("Hello {$playerName}");
     
     for ($attempt = 0; $attempt < LIVE_POINTS; $attempt++) {
-        $currentGame = gameData();
+        $currentGame = $gameData();
         $question = $currentGame['getQuestion'];
         $correctAnswer = $currentGame['getCorrectAnswer'];
 
