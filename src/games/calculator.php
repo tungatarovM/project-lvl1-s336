@@ -27,8 +27,8 @@ function getCorrectAnswer($firstNum, $secondNum, $operation)
 function gameRun()
 {
     $gameData = function () {
-        $firstNum = rand();
-        $secondNum = rand();
+        $firstNum = rand(0, 1000);
+        $secondNum = rand(0, 1000);
         $randomOperation = getRandomOperation();
         $question = "{$firstNum}{$randomOperation}{$secondNum}";
         $answer = getCorrectAnswer($firstNum, $secondNum, $randomOperation);
