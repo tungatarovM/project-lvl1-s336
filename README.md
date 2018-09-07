@@ -9,6 +9,15 @@
   make install - to install all the dependencies
   
   make lint - to start the linter
+  
+# Usage
+  Brain-games - to start greeting function
+  
+  brain-even - to start brain-even
+  
+  brain-calc - to start brain-calc
+  
+  brain-gcd - to start brain-gcd
 
 # Asciinema recs:
   1st checkpoint: https://asciinema.org/a/Tq8mKAUBmoAPJPLshiY4nTVqX
