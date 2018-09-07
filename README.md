@@ -25,3 +25,5 @@
   4th checkpoint: https://asciinema.org/a/ZEV1bFp2FNudSByYyBgt8NFs5
   
   5th checkpoint: https://asciinema.org/a/LmezM93BKZx3ivlaKBBRdR5Cq
+  
+  6th checkpoint: https://asciinema.org/a/iaEme4DqMaXGlNnZ3V281YKyB
