@@ -7,6 +7,7 @@
 
 # Commands
   make install - to install all the dependencies
+  
   make lint - to start the linter
 
 # Asciinema recs:
