@@ -27,11 +27,10 @@ function startEngine($gameData, $gameRules)
         $correctAnswer = $currentGame['getCorrectAnswer'];
 
         line("Question: {$question}");
-        $playersAnswer = prompt("Your answer:");
+        $playersAnswer = prompt("Your answer");
 
         if ($playersAnswer === $correctAnswer) {
             line("Correct!");
-            $userPoints = $userPoints + 1;
         } else {
             line("'{$playersAnswer}' is wrong answer ;(. Correct answer was '{$correctAnswer}'");
             line("Let's try again {$playerName}");
