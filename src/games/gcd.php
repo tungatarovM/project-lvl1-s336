@@ -17,8 +17,8 @@ function findGcd($numOne, $numTwo)
 function gameRun()
 {
     $gameData = function () {
-        $numOne = rand(0, 1000);
-        $numTwo = rand(0, 1000);
+        $numOne = rand(0, 10);
+        $numTwo = rand(0, 10);
         $question = "{$numOne} {$numTwo}";
         $answer = findGcd($numOne, $numTwo);
         return [
