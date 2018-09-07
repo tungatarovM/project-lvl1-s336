@@ -4,7 +4,7 @@ namespace BrainGames\Games\Even;
 
 use BrainGames\Cli\startEngine;
 
-const GAME_RULES = 'Answer "yes" if number even otherwise answer "no"';
+const EVEN_GAME_RULES = 'Answer "yes" if number even otherwise answer "no"';
 
 
 function getCorrectAnswer($question)
@@ -28,5 +28,5 @@ function gameRun()
             "getCorrectAnswer" => $answer
         ];
     };
-    return startEngine($gameData);
+    return startEngine($gameData, EVEN_GAME_RULES);
 }
