@@ -55,8 +55,21 @@ function balanceNum(array $nums)
     $minDigitIndex = getMinDigitIndex($newNums);
     
     foreach ($newNums as $key => $value) {
-
+        if ($key === $minDigitIndex) {
+            $value = $value + 1;
+        }
+        if ($key === $maxDigitIndex) {
+            $value = $value + 1;
+        }
     }
+    return $newNums;
+}
+
+function isBalanced(array $nums)
+{
+    $maxDigitIndex = getMaxDigitIndex($newNums);
+    $minDigitIndex = getMinDigitIndex($newNums);
+    return $nums[$maxDigitIndex] - $num[$minDigitIndex] <= 1;
 }
 
 function getBalancedNum($num)
