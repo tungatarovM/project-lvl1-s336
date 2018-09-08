@@ -4,7 +4,8 @@
         "bin/brain-games",
         "bin/brain-even",
         "bin/brain-calc",
-        "bin/brain-gcd"
+        "bin/brain-gcd",
+        "bin/brain-balance"
     ],
     "type": "project",
     "keywords": ["brain-games", "php-cli-game", "hexlet"],
@@ -24,7 +25,8 @@
             "src/Cli.php",
             "src/games/even.php",
             "src/games/calculator.php",
-            "src/games/gcd.php"
+            "src/games/gcd.php",
+            "src/games/balance.php"
         ]
     },
     "minimum-stability": "stable",
