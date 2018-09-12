@@ -40,7 +40,7 @@ function getMinDigitIndex(array $nums)
     $minNumIndex = 0;
 
     foreach ($nums as $key => $value) {
-        if ($value < $nums[$minIndex]) {
+        if ($value < $nums[$minNumIndex]) {
             $minNumIndex = $key;
         }
     }
@@ -48,39 +48,61 @@ function getMinDigitIndex(array $nums)
     return $minNumIndex;
 }
 
-function balanceNum(array $nums)
+function balanceNum($num)
 {
-    $newNums = array_slice($nums, 0);
-    $maxDigitIndex = getMaxDigitIndex($newNums);
-    $minDigitIndex = getMinDigitIndex($newNums);
+    $arrOfNums = splitNum($num);
+    $maxDigitIndex = getMaxDigitIndex($arrOfNums);
+    $minDigitIndex = getMinDigitIndex($arrOfNums);
     
-    foreach ($newNums as $key => $value) {
+    foreach ($arrOfNums as $key => $value) {
         if ($key === $minDigitIndex) {
-            $value = $value + 1;
+            $arrOfNums[$key] = $value + 1;
         }
         if ($key === $maxDigitIndex) {
-            $value = $value + 1;
+            $arrOfNums[$key] = $value - 1;
         }
     }
-    return $newNums;
+    sort($arrOfNums);
+    return joinNums($arrOfNums);
 }
 
-function isBalanced(array $nums)
+function isSorted($arrOfNums)
 {
-    $maxDigitIndex = getMaxDigitIndex($newNums);
-    $minDigitIndex = getMinDigitIndex($newNums);
-    return $nums[$maxDigitIndex] - $num[$minDigitIndex] <= 1;
+    $stack = [$arrOfNums[0]];
+    for ($i = 0; $i < count($arrOfNums); $i++) {
+        $curr = $arrOfNums[$i];
+        $prev = array_pop($stack);
+        if ($curr < $prev) {
+            return false;
+        }
+        array_push($stack, $curr);
+    }
+    return true;
+}
+
+function isBalanced($num)
+{
+    $arrOfNums = splitNum($num);
+    $maxDigitIndex = getMaxDigitIndex($arrOfNums);
+    $minDigitIndex = getMinDigitIndex($arrOfNums);
+
+    if (count($arrOfNums) <= 1) {
+        return true;
+    }
+    
+    if ($arrOfNums[$maxDigitIndex] - $arrOfNums[$minDigitIndex] <= 1 && isSorted($arrOfNums)) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 function getBalancedNum($num)
 {
-    $arrOfNums = splitNum($num);
-
-    if (isBalanced($arrOfNums)) {
-        sort($arrOfNums);
-        return joinNums($arrOfNums);
+    if (isBalanced($num)) {
+        return $num;
     }
-    return getBalancedNum(balanceNum($arrOfNums));
+    return getBalancedNum(balanceNum($num));
 }
 
 function gameRun()
