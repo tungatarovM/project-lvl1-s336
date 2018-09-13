@@ -45,9 +45,9 @@ function getMissedNum($sequenceObj)
     $range = $sequenceObj['getRange'];
 
     $previousNum = $seq[$missedNumIndex - 1];
-    $nextNum = $seq[$missedNumIndex + 1];
 
     if ($missedNumIndex === 0) {
+        $nextNum = $seq[$missedNumIndex + 1];
         return $nextNum - $range;
     }
     return $previousNum + $range;
