@@ -69,5 +69,5 @@ function gameRun()
             'getCorrectAnswer' => "{$answer}",
         ];
     };
-    return startEngine($gameData);
+    return startEngine($gameData, PROGRESSION_GAME_RULES);
 }
