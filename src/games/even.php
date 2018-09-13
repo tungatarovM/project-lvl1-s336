@@ -25,7 +25,7 @@ function gameRun()
         $answer = getCorrectAnswer($question);
         return [
             "getQuestion" => $question,
-            "getCorrectAnswer" => $answer
+            "getCorrectAnswer" => "{$answer}"
         ];
     };
     return startEngine($gameData, EVEN_GAME_RULES);
