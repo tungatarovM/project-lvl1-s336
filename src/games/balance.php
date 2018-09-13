@@ -16,13 +16,13 @@ function splitNum($num)
     return $arrOfNums;
 }
 
-function joinNums(array $arrOfNums)
+function joinNums($arrOfNums)
 {
     $joinedStr = implode($arrOfNums);
     return intval($joinedStr);
 }
 
-function getMaxDigitIndex(array $nums)
+function getMaxDigitIndex($nums)
 {
     $maxNumIndex = 0;
     
@@ -35,7 +35,7 @@ function getMaxDigitIndex(array $nums)
     return $maxNumIndex;
 }
 
-function getMinDigitIndex(array $nums)
+function getMinDigitIndex($nums)
 {
     $minNumIndex = 0;
 
@@ -48,7 +48,7 @@ function getMinDigitIndex(array $nums)
     return $minNumIndex;
 }
 
-function balanceNum($num)
+function balance($num)
 {
     $arrOfNums = splitNum($num);
     $maxDigitIndex = getMaxDigitIndex($arrOfNums);
@@ -102,7 +102,7 @@ function getBalancedNum($num)
     if (isBalanced($num)) {
         return $num;
     }
-    return getBalancedNum(balanceNum($num));
+    return getBalancedNum(balance($num));
 }
 
 function gameRun()
@@ -113,7 +113,7 @@ function gameRun()
         $answer = getBalancedNum($num);
         return [
             'getQuestion' => $question,
-            'getCorrectAnswer' => $answer
+            'getCorrectAnswer' => "{$answer}"
         ];
     };
     return startEngine($gameData, BALANCE_GAME_RULES);
